@@ -24,6 +24,27 @@ describe('findThirdAngle', () => {
     expect(result).toBeTypeOf("number")
 
   })
+it('should return 59 if angles are 43 and 78', () => {
+  
+    const firstAngle = 43;
+    const secondAngle = 78; 
+    const result = findThirdAngle(firstAngle, secondAngle);
+
+    expect(result).toBe(59);
+    expect(result).toBeTypeOf("number");
+})
+
+it('should return 150 if angles are 10 and 20', () => {
+    
+    const firstAngle = 10;
+    const secondAngle = 20;
+    const result = findThirdAngle(firstAngle, secondAngle);
+
+    expect(result).toBe(150);
+    expect(result).toBeTypeOf("number");
+    
+})
+
 
 
 })
