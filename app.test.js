@@ -13,6 +13,17 @@ describe('findThirdAngle', () => {
 
   })  
 
+  it('should return 60 when both angles are 60', () => {
+    
+
+    const firstAngle = 60;
+    const secondAngle = 60;
+    const result= findThirdAngle(firstAngle, secondAngle);
+
+    expect(result).toBe(60);
+    expect(result).toBeTypeOf("number")
+
+  })
 
 
 })
